@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 // The Jenkins pipeline passes BUILD_NUMBER into the container,
 // so the page shows which pipeline build is currently deployed.
-function buildNumber() {
+function buildNumbe() {
   return process.env.BUILD_NUMBER || 'local';
 }
 
