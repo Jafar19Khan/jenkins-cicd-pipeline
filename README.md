@@ -89,18 +89,62 @@ curl http://localhost:3000/health
 ```
 
 ## Evidence (screenshots)
+## Evidence Screenshots
 
-| Step | Screenshot |
-|---|---|
-| VM and firewall rule | ![vm](docs/screenshots/01-vm-and-firewall.png) |
-| Jenkins service running | ![jenkins](docs/screenshots/02-jenkins-running.png) |
-| Jenkins user can use Docker | ![docker](docs/screenshots/03-jenkins-docker-access.png) |
-| Pipeline job configuration (Pipeline script from SCM) | ![job](docs/screenshots/04-job-configuration.png) |
-| Stage View: all stages green | ![stages](docs/screenshots/05-stage-view-success.png) |
-| Console output | ![console](docs/screenshots/06-console-output.png) |
-| Application in the browser (build #1) | ![app1](docs/screenshots/07-app-build-1.png) |
-| New build started by a commit (build #2) | ![auto](docs/screenshots/08-auto-triggered-build-2.png) |
-| Application after the commit (build #2) | ![app2](docs/screenshots/09-app-build-2.png) |
+### 1. GCP VM Instance
+![GCP VM Instance](Evidence%20screenshots/01-gcp-vm-instance.png)
+
+### 2. Jenkins Initial Setup
+![Jenkins Unlock](Evidence%20screenshots/02-jenkins-unlock.png)
+
+### 3. Jenkins Plugin Installation
+![Jenkins Plugin Setup](Evidence%20screenshots/03-jenkins-plugin-setup.png)
+
+### 4. Jenkins Dashboard
+![Jenkins Dashboard](Evidence%20screenshots/04-jenkins-dashboard.png)
+
+### 5. GitHub Repository
+![GitHub Repository](Evidence%20screenshots/05-github-repository.png)
+
+### 6. Successful Pipeline Console Output
+![Console Output Success](Evidence%20screenshots/06-console-output-success.png)
+
+### 7. Jenkins Pipeline Stage View
+![Pipeline Stage View](Evidence%20screenshots/07-pipeline-stage-view.png)
+
+### 8. Jenkins Build History
+![Jenkins Build History](Evidence%20screenshots/08-jenkins-build-history.png)
+
+### 9. Deployed Application
+![Deployed Application](Evidence%20screenshots/09-deployed-application.png)
+
+### 10. First Build Console Output
+![First Build Console](Evidence%20screenshots/10-first-build-console.png)
+
+### 11. First Build Stage View
+![First Build Stage View](Evidence%20screenshots/11-first-build-stage-view.png)
+
+### 12. First Build Job Page
+![First Build Job Page](Evidence%20screenshots/12-first-build-job-page.png)
+
+### 13. GCP VM Configuration
+![GCP VM Configuration](Evidence%20screenshots/13-gcp-vm-configuration.png)
+
+### 14. Jenkins Node Status
+![Jenkins Node Status](Evidence%20screenshots/14-jenkins-node-status.png)
+
+### 15. GCP Firewall Rule
+![GCP Firewall Rule](Evidence%20screenshots/15-gcp-firewall-rule.png)
+
+## Pipeline Result
+
+The Jenkins CI/CD pipeline successfully builds the Docker image, runs automated tests, deploys the application on port 3000, and verifies application health.
+
+The successful pipeline execution is confirmed by `Finished: SUCCESS` in the Jenkins Console Output.
+
+## Automatic Trigger
+
+A GitHub commit triggers the Jenkins pipeline automatically. Build History and Stage View can be used to verify the triggered build and its result.
 
 ## Interview questions
 
