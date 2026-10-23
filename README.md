@@ -88,8 +88,7 @@ docker run -d -p 3000:3000 --name jenkins-demo-app jenkins-demo-app
 curl http://localhost:3000/health
 ```
 
-## Evidence (screenshots)
-## Evidence Screenshots
+## Screenshots
 
 ### 1. GCP VM Instance
 ![GCP VM Instance](Evidence%20screenshots/01-gcp-vm-instance.png)
